@@ -1,0 +1,372 @@
+:root {
+  /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400; */
+
+  /* color-scheme: light dark; */
+  /* color: rgba(255, 255, 255, 0.87); */
+  /* background-color: #242424; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+
+
+@font-face {
+    font-family: "DM Mono";
+    src: url("fonts/DM_Mono/DMMono-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Buda";
+    src: url("fonts/Buda/Buda-Light.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: #4A4C5E;
+    background-image:
+            url("./assets/Spirals.png"),
+            url("./assets/Paper_Background.jpg");
+    background-position:
+            center top,
+            center center;
+    background-size:
+            cover,
+            contain;
+    background-repeat:
+            no-repeat,
+            repeat;
+}
+
+h1 {
+    font-family: "Buda";
+    font-size: 100px;
+    margin: 0;
+    letter-spacing: 0.1em;
+    position: relative;
+}
+
+h2 {
+    font-family: "DM Mono", monospace;
+    font-weight: lighter;
+    font-size: 15px;
+    margin: 0;
+}
+
+h3 {
+    font-family: "DM Mono", monospace;
+    font-size: 20px;
+}
+
+h4 {
+    text-align: left;
+}
+
+hr {
+    color: #4A4C5E;
+    background-color: #4A4C5E;
+    height: 1px;
+}
+
+ul {
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+li {
+    text-align: left;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: url("images/Paper_Background.jpg");
+    background-position: top top;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.2);
+    z-index: 1000;
+    border-bottom: 1px solid #4A4C5E;
+}
+
+footer {
+    /* width: 100%; */
+    display: flex;
+    font-family: "DM Mono", monospace;
+    font-size: 15px;
+    border-top: 1px solid #4A4C5E;
+}
+
+footer div {
+    /* text-align: center; */
+    flex-grow: 3;
+}
+.footercol1 {
+    /* margin-top: -10px; */
+    margin-left: 10px;
+    text-align: left;
+    line-height: 0.8;
+}
+.footercol2 {
+    margin-top: 50px;
+    font-size: 10px;
+}
+.footercol3 {
+  justify-content: flex-end;
+  text-align: right;
+}
+.footercol3 a {
+    text-decoration: none;
+    color: #4A4C5E;
+    /* text-align: right; */
+}
+
+.navbar {
+    display: flex;
+    gap: 32px;
+    padding: 10px 20px;
+}
+
+
+.navbar a {
+    font-family: "DM Mono", monospace;
+    color: #4A4C5E;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.me_img {
+    width: 300;
+    height: 300;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 120px 60px 20px 60px;
+}
+
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex: 1;
+}
+
+.intro-text h2 {
+    font-family: "DM Mono", monospace;
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: left;
+    /* margin-left: 0px; */
+}
+
+.name-row {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.summary1 {
+    margin-left: 50px;
+}
+
+.iama {
+    font-family: "DM Mono", monospace;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.umich {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.studying {
+    list-style-type: '-> ';
+    /* margin-block-start: 5em; */
+}
+
+.summary2 {
+    margin-left: 700px;
+    display: block;
+    max-width: 50%;
+    text-align: right;
+}
+
+
+.resume-section {
+  padding: 50px 20px 40px;
+
+}
+
+/* .resume-inner {
+  max-width: 900px; 
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #4A4C5E;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+} */
+
+.resume-frame {
+  width: 100%;
+  min-height: 70vh;
+  border: none;
+}
+
+.Resume Button {
+    background-color: #ffffff00;
+    width: 45px;
+    border: none;
+    display: flex;
+    justify-content: start;
+    margin-top: 100px;
+}
+
+
+.projects {
+    padding: 4rem 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.projects h2 {
+    font-family: 'DM Mono', monospace;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.project-card {
+    background: #1f2937ad;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.project-header h3 {
+    font-size: 1.35rem;
+    margin: 0;
+    color: #f9fafb;
+}
+
+.project-type {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.75rem;
+    background: #374151;
+    color: #9ca3af;
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.project-description {
+    font-family: 'DM Mono', monospace;
+    color: #d1d5db;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.project-contributions {
+    font-family: 'DM Mono', monospace;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+}
+
+.project-contributions li {
+    background: #111827;
+    color: #9eedff;
+    font-size: 0.8rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 6px;
+}
+
+.project-meta {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.9rem;
+    color: #9ca3af;
+    margin-bottom: 1rem;
+}
+
+.project-meta p {
+    margin: 0.25rem 0;
+}
+
+.project-link {
+    display: inline-block;
+    color: #9eedff;
+    font-family: 'DM Mono', monospace;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.project-link:hover {
+    color: #93c5fd;
+    text-decoration: underline;
+}
