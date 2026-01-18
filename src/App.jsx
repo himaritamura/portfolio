@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Link, NavLink } from 'react-router-dom'
 import './App.css'
 
 import About from './pages/about.jsx'
-import Portfolio from './pages/portfolio.jsx'
+import Projects from './pages/projects.jsx'
 import Resume from './pages/resume.jsx'
 
 const navLinkStyles = ({ isActive }) => ({
@@ -19,7 +19,7 @@ function App() {
           <header>
               <div className="navbar">
                   <NavLink to="/" style={navLinkStyles}>ABOUT</NavLink>
-                  <NavLink to="/portfolio" style={navLinkStyles}>PORTFOLIO</NavLink>
+                  <NavLink to="/projects" style={navLinkStyles}>PROJECTS</NavLink>
                   <NavLink to="/resume" style={navLinkStyles}>RESUME</NavLink>
 
               </div>
@@ -27,7 +27,7 @@ function App() {
 
           <Routes>
             <Route path="/" element={<About />} />
-            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/projects" element={<Projects />} />
             <Route path = "/resume" element={<Resume />} />
           </Routes>
           
